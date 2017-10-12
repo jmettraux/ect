@@ -7,5 +7,10 @@ end
 module Enumerable
 
   alias bisect partition
+
+  def dissect
+
+    inject([]) { |a, elt| (a[yield(elt)] ||= []) << elt; a }
+  end
 end
 
