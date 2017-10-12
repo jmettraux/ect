@@ -5,9 +5,20 @@
 
 Ruby methods ending in `ect`.
 
-The subject of last part of a lightning talk for [Hiroshima.rb #058](https://hiroshimarb.connpass.com/event/65459/).
+The subject of last part of a [lightning talk](https://speakerdeck.com/jmettraux/ruby-methods-in-ect-hiroshima-dot-rb-number-058) for [Hiroshima.rb #058](https://hiroshimarb.connpass.com/event/65459/).
 
-<script async class="speakerdeck-embed" data-id="d9e7715a34e0402a8c81016d403aa2c2" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+<a href="https://speakerdeck.com/jmettraux/ruby-methods-in-ect-hiroshima-dot-rb-number-058"><img src="doc/presentation.png" style="border: 1px solid grey;"/></a>
+
+
+## Object
+
+### `Object#inflect`
+### `Object#deflect`
+
+## Enumerable
+
+### `Enumerable#bisect`
+### `Enumerable#dissect`
 
 
 ## LICENSE
