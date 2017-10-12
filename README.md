@@ -13,11 +13,9 @@ I like to chain methods ending in `ect`. I wanted to have more of them.
 
 ### `Object#inflect`
 
-```
-inflect |ɪnˈflɛkt|
-
-ORIGIN late Middle English (in sense 3): from Latin inflectere, from in- ‘into’ + flectere ‘to bend’.
-```
+> inflect |ɪnˈflɛkt|
+>
+> ORIGIN late Middle English (in sense 3): from Latin inflectere, from in- ‘into’ + flectere ‘to bend’.
 
 An alias to `#tap`. Passes the instance to the block, returns the instance.
 
@@ -29,11 +27,9 @@ An alias to `#tap`. Passes the instance to the block, returns the instance.
 
 ### `Object#deflect`
 
-```
-deflect |dɪˈflɛkt|
-
-ORIGIN mid 16th cent.: from Latin deflectere, from de- ‘away from’ + flectere ‘to bend’.
-```
+> deflect |dɪˈflɛkt|
+>
+> ORIGIN mid 16th cent.: from Latin deflectere, from de- ‘away from’ + flectere ‘to bend’.
 
 A very simple `yield(self)` (in Ruby 2.5.x it could thus become an alias to `#yiel_self`).
 
