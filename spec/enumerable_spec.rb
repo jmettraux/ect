@@ -7,6 +7,7 @@
 
 require 'spec_helper'
 
+
 describe 'Enumerable#bisect' do
 
   it 'is an alias to partition' do
@@ -18,6 +19,7 @@ describe 'Enumerable#bisect' do
     )
   end
 end
+
 
 describe 'Enumerable#dissect' do
 

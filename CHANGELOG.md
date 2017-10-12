@@ -4,6 +4,7 @@
 
 ## ect 1.0.0  not yet released
 
+- Implement Object#deflect
 - Implement Enumerable#dissect
 - Alias #bisect to Enumerable#partition
 
