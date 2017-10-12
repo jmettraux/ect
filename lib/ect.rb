@@ -7,6 +7,8 @@ end
 
 class Object
 
+  alias inflect tap
+
   def deflect
 
     yield(self)

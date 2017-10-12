@@ -8,15 +8,34 @@
 require 'spec_helper'
 
 
-describe 'Object#deflect' do
+describe Object do
 
-  it 'yields self and returns the yielded result' do
+  describe '#inflect' do
 
-    expect(
-      (1..21).deflect { |a| a.reduce(:+) }
-    ).to eq(
-      231
-    )
+    it 'is an alias to #tap' do
+
+      a = nil
+
+      expect(
+        (0..9).inflect { |x| a = x; -1 }
+      ).to eq(
+        0..9
+      )
+
+      expect(a).to eq(0..9)
+    end
+  end
+
+  describe '#deflect' do
+
+    it 'yields self and returns the yielded result' do
+
+      expect(
+        (1..21).deflect { |a| a.reduce(:+) }
+      ).to eq(
+        231
+      )
+    end
   end
 end
 
