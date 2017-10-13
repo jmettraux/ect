@@ -43,8 +43,51 @@ Passes the instance to the block, returns the result of the block. Change of dir
 
 ## Enumerable
 
-### `Enumerable#bisect`
-### `Enumerable#dissect`
+### Enumerable#bisect
+
+> bisect |bʌɪˈsɛkt|
+>
+> ORIGIN mid 17th cent.: from bi-‘two’ + Latin sect- (from secare ‘to cut’).
+
+An alias to `#partition`. Returns two arrays (the true array and the false array).
+
+```ruby
+%w[ fox lion crow donkey wolf ]
+  .bisect { |a| a.length > 3 }
+    #
+    # => [ %w[ lion crow donkey wolf ],
+    #      %w[ fox ] ]
+```
+
+### Enumerable#dissect
+
+> dissect |dʌɪˈsɛkt, dɪ-|
+>
+> ORIGIN late 16th cent.: from Latin dissect- ‘cut up’, from the verb dissecare, from dis- ‘apart’ + secare ‘to cut’.
+
+"Cuts" the incoming Enumerable instance in multiple arrays.
+
+```ruby
+a0, a1, a2 = (1..14).dissect { |i| i % 3 }
+
+p a0  # => [ 3, 6, 9, 12 ]
+p a1  # => [ 1, 4, 7, 10, 13 ]
+p a2  # => [ 2, 5, 8, 11, 14 ]
+```
+
+A sparse answer is possible:
+```ruby
+a0, a1, a2 = (1..14)
+  .dissect { |i|
+    case m = i % 3
+    when 0, 2 then m
+    else 0
+    end }
+
+p a0  # => [ 1, 3, 4, 6, 7, 9, 10, 12, 13 ]
+p a1  # => nil
+p a2  # => [ 2, 5, 8, 11, 14 ]
+```
 
 
 ## LICENSE
