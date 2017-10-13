@@ -11,7 +11,7 @@ I like to chain methods ending in `ect`. I wanted to have more of them.
 
 ## Object
 
-### `Object#inflect`
+### Object#inflect
 
 > inflect |ɪnˈflɛkt|
 >
@@ -25,7 +25,7 @@ An alias to `#tap`. Passes the instance to the block, returns the instance.
   .collect(&:capitalize)
 ```
 
-### `Object#deflect`
+### Object#deflect
 
 > deflect |dɪˈflɛkt|
 >
