@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   s.summary = 'Methods ending in ect'
 
   s.description = %{
-Methods ending in ect
+Methods ending in ect. Mostly a joke.
   }.strip
 
   #s.files = `git ls-files`.split("\n")

@@ -9,6 +9,9 @@ The subject of last part of a [lightning talk](https://speakerdeck.com/jmettraux
 
 I like to chain methods ending in `ect`. I wanted to have more of them.
 
+Mostly a joke.
+
+
 ## Object
 
 ### Object#inflect
