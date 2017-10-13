@@ -1,7 +1,7 @@
 
 # ect
 
-[![Gem Version](https://badge.fury.io/rb/et-orbi.svg)](http://badge.fury.io/rb/ect)
+[![Gem Version](https://badge.fury.io/rb/ect.svg)](http://badge.fury.io/rb/ect)
 
 Ruby methods ending in `ect`.
 
