@@ -44,6 +44,13 @@ Passes the instance to the block, returns the result of the block. Change of dir
   .collect(&:capitalize)
 ```
 
+```ruby
+user = DB[:users]
+  .select(:id, :name)
+  .deflect { |x| id ? x.where(id: id) : x.where(name: name) }
+  .first
+```
+
 ## Enumerable
 
 ### Enumerable#bisect
