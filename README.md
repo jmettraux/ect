@@ -34,7 +34,7 @@ An alias to `#tap`. Passes the instance to the block, returns the instance.
 >
 > ORIGIN mid 16th cent.: from Latin deflectere, from de- ‘away from’ + flectere ‘to bend’.
 
-A very simple `yield(self)` (in Ruby 2.5.x it could thus become an alias to `#yiel_self`).
+A very simple `yield(self)` (in Ruby 2.5.x it could thus become an alias to `#yield_self`).
 
 Passes the instance to the block, returns the result of the block. Change of direction.
 
