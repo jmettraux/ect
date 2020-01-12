@@ -2,6 +2,9 @@
 # ect CHANGELOG.md
 
 
+## ect 1.1.0  not yet released
+
+
 ## ect 1.0.0  released 2017-10-13
 
 - Alias #inflect to Object#tap
