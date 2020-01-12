@@ -2,7 +2,7 @@
 # ect CHANGELOG.md
 
 
-## ect 1.1.0  not yet released
+## ect 1.1.0  released 2020-01-12
 
 - Implement Enumerable#elect
 
