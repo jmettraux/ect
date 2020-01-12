@@ -47,5 +47,22 @@ describe Enumerable do
       expect(a2).to eq([ 2, 5, 8, 11, 14 ])
     end
   end
+
+  describe '#elect' do
+
+    it 'finds and returns the block result (not the container)' do
+
+      a = [ { a: 1 }, { b: 2 }, { c: 3 } ]
+
+      expect(a.elect { |e| e[:b] }).to eq(2)
+    end
+
+    it 'returns nil else' do
+
+      a = [ { a: 1 }, { b: 2 }, { c: 3 } ]
+
+      expect(a.elect { |e| e[:z] }).to eq(nil)
+    end
+  end
 end
 

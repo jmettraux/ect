@@ -24,5 +24,10 @@ module Enumerable
 
     inject([]) { |a, elt| (a[yield(elt)] ||= []) << elt; a }
   end
+
+  def elect
+
+    find { |elt| r = yield(elt); break r if r }
+  end
 end
 

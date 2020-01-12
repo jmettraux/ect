@@ -99,6 +99,21 @@ p a1  # => nil
 p a2  # => [ 2, 5, 8, 11, 14 ]
 ```
 
+### Enumerable#elect
+
+> elect |əˈlekt|
+>
+> ORIGIN late Middle English: from Latin elect- ‘picked out’, from the verb eligere, from e- (variant of ex-) ‘out’ + legere ‘to pick’.
+
+Like a `find`, but yields the result of the block instead of the matching element.
+
+```ruby
+a = [ { a: 1 }, { b: 2 }, { c: 3 } ]
+
+a.elect { |e| e[:b] }  # => 2
+a.elect { |e| e[:z] }  # => nil
+```
+
 
 ## LICENSE
 
