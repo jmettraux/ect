@@ -27,6 +27,8 @@ An alias to `#tap`. Passes the instance to the block, returns the instance.
 %w[ fox lion crow donkey wolf ]
   .inflect { |a| a << 'mole' }
   .collect(&:capitalize)
+    #
+    # => [ 'Fox', 'Lion', 'Crow', 'Donkey', 'Wolf', 'Mole' ]
 ```
 
 ### Object#deflect
@@ -40,16 +42,25 @@ A very simple `yield(self)` (in Ruby 2.5.x it could thus become an alias to `#yi
 Passes the instance to the block, returns the result of the block. Change of direction.
 
 ```ruby
-[ animals_list_1, animals_list_2 ]
+a1 = %w[ bat donkey horse ]
+a2 = %w[ cat rat dog mole ]
+
+[ a1, a2 ]
   .deflect { |a, b| a.include?('mole') ? a : b }
   .collect(&:capitalize)
+    #
+    # => [ "Cat", "Rat", "Dog", "Mole" ]
 ```
 
 ```ruby
-user = DB[:users]
-  .select(:id, :name)
-  .deflect { |x| id ? x.where(id: id) : x.where(name: name) }
-  .first
+def lookup_user(id_or_name)
+
+  DB[:users]
+    .select(:id, :name)
+    .deflect { |x|
+      id_or_name.is_a?(Integer) ? x.where(id: id) : x.where(name: name) }
+    .first
+end
 ```
 
 ## Enumerable
