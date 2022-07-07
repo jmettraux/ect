@@ -1,6 +1,7 @@
 
 # ect
 
+[![tests](https://github.com/jmettraux/ect/workflows/test/badge.svg)](https://github.com/jmettraux/ect/actions)
 [![Gem Version](https://badge.fury.io/rb/ect.svg)](http://badge.fury.io/rb/ect)
 
 Ruby methods ending in `ect`.
